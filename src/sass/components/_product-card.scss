@@ -1,42 +1,139 @@
 .product-card {
     text-align: center;
     margin-bottom: 30px;
+    background: #fff;
+    border-radius: 1rem;
+    border: 2px solid #e1e1e1;
+    padding: 1rem;
+    position: relative;
 
-    &__image {
-        padding-top: 100%;
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 30px;
+    // &__image {
+    //     padding-top: 100%;
+    //     position: relative;
+    //     overflow: hidden;
+    //     margin-bottom: 30px;
 
-        img {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 100%;
+    //     img {
+    //         position: absolute;
+    //         top: 0;
+    //         left: 50%;
+    //         transform: translateX(-50%);
+    //         height: 100%;
 
-            &:nth-child(1) {
-                transform: translateX(-50%) scale(1);
-                transition: transform 0.5s ease;
-            }
+    //         &:nth-child(1) {
+    //             transform: translateX(-50%) scale(0.75);
+    //             transition: transform 0.5s ease;
+    //         }
 
-            &:nth-child(2) {
-                transform: translateX(-50%) scale(0);
-            }
-        }
+    //         &:nth-child(2) {
+    //             transform: translateX(-50%) scale(0);
+    //         }
+    //     }
 
-        &:hover img {
-            &:nth-child(1) {
-                transform: translateX(-50%) scale(0);
-            }
+    //     &:hover img {
+    //         &:nth-child(1) {
+    //             transform: translateX(-50%) scale(0.75);
+    //             z-index: 1;
+    //         }
 
-            &:nth-child(2) {
-                transform: translateX(-50%) scale(1);
-                transition: transform 0.5s ease;
-            }
-        }
+    //         &:nth-child(2) {
+    //             transform: translateX(-50%) scale(0.25);
+    //             transition: transform 0.5s ease;
+    //             z-index: 2;
+    //         }
+    //         cursor: pointer;
+    //     }
+    // }
+
+    &__banner{
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        font-size: 1rem;
+        z-index: 2;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background: #e1e1e1;
+        color: #000;
+        padding: 0.5rem;
+        opacity: 0.75;
+        font-weight: bold;
+        border-radius: 0.5rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
 
+    &__image{
+        // padding-top: 100%;
+        // position: relative;
+        // overflow: hidden;
+        // margin-bottom: 30px;
+
+        position: relative;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: #fafafa;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+            border-radius: 1rem;
+        }
+
+        &:hover::before {
+            opacity: 0.7;
+        }
+        
+        &__btn{
+            outline: none;
+            border: none;
+            border-radius: 0.5rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        &:hover &__btn {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        &__heart{
+            position: absolute;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 1rem;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            right: 0;
+            z-index: 2;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+            i{
+                color: red;
+            }
+        }
+
+        &:hover &__heart {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        
+    }
+    
     &__name {
         margin-bottom: 10px;
         color: $txt-second-color;

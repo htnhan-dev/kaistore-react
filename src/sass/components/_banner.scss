@@ -1,0 +1,61 @@
+.banner{
+    height: 50vh;
+    background-image: url('../../assets/images/fashion-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+    color: #fff;
+
+    @include mobile{
+        height: 30vh;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .btn{
+        border-color: #fff;
+    
+        &:hover{
+            border-color: $main-color;
+        }
+    }
+
+    &__content{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        line-height: 1.5;
+
+        @include mobile{
+            line-height: 2;
+        }
+        
+
+        h2{
+            font-size: 2rem;
+
+            
+
+        }
+
+        h1{
+            font-size: 4rem;
+
+            @include mobile{
+                font-size: 3.5rem;
+            }
+        }
+
+        span{
+            color: #fff;
+            @include mobile{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+

@@ -3,12 +3,11 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import Button from './Button'
 
-import img from '../assets/images/slider/hero-1-2.png'
+import img from '../assets/images/slider/hero-1-1.png'
 
 const HeroSlider = props => {
 
     const data = props.data
-    console.log(img)
     const timeOut = props.timeOut ? props.timeOut : 3000
 
     const [activeSlide, setActiveSlide] = useState(0);
@@ -93,7 +92,6 @@ const HeroSliderItem = props => (
         <div className="hero-slider__item__image">
             <div className={`shape bg-${props.item.color}`}></div>
             <img src={props.item.img} alt="" />
-            {console.log(props.item.title)}
         </div>
     </div>
 )
