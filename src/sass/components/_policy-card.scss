@@ -5,6 +5,7 @@
     box-shadow: $box-shadow;
     transition: transform 0.5s ease;
     border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
 
     &:hover {
         transform: translateY(-20px);

@@ -1,5 +1,130 @@
 .feedback{
     background-color: #f2f8fd;
-    height: 50vh;
+    height: 70vh;
     border-radius: 1rem;
+
+    &__content{
+        height: 100%;
+
+        &__title{
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding-top: 5rem;
+
+            h1{
+                font-size: 3rem;
+            }
+            h3{
+                color: gray;
+                @include mobile{
+                    padding: 0 5rem;
+                    text-align: center;
+                    line-height: 1.25;
+                    font-size: 1.35rem;
+                }
+                @include tablet{
+                    font-size: 1.5rem;
+                    text-align: center;
+                    line-height: 1.25;
+                }
+            }
+        }
+
+        &__coment{
+            padding-top: 5rem;
+            height: 75%;
+            border-radius: 1rem;
+
+            &__slider{
+                width: 40vw;
+                @include mobile{
+                    padding: 0 7.5rem;
+                }
+
+
+                &__content{
+                    width: 34vw;
+                    font-size: 1.5rem;
+                    margin-top: 5px;
+                    @include mobile{
+                        width: 100%;
+                        font-size: 1.5rem;
+                        line-height: 1.25;
+                    }
+                    @include tablet{
+                        width: 60vw;
+                        font-size: 1.5rem;
+                        line-height: 1.25;
+                    }
+                }
+
+                &__info{
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5rem;
+                    margin-top: 2rem;
+
+                    &__details{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+
+                        .name{
+                            font-size: 1.5rem;
+                            color: $main-color;
+                            @include tablet{
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .posible{
+                            font-size: 1.25rem;
+                            @include tablet{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.slick-slider{
+    height: 90%;
+}
+.slick-list{
+    height: 90%;
+    padding: 0px 10rem;
+    @include mobile{
+        height: 100%;
+        padding: 0;
+    }
+}
+.prev, .next{
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 99;
+}
+.prev{
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translate(-50%);
+}
+.next{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(-50%);
 }

@@ -1,9 +1,10 @@
+const img01 = "/static/media/01.164c60d891cdb6d2189b.jpg";
 
 const products = [
     {
         title: "Áo thun Dinosaur 01",
         price: '189000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-thun",
         colors: ["white", "red", "orange"],
         slug: "ao-thun-dinosaur-01",
@@ -13,7 +14,7 @@ const products = [
     {
         title: "Áo thun Dinosaur 02",
         price: '159000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-thun",
         colors: ["white", "red", "blue"],
         slug: "ao-thun-dinosaur-02",
@@ -23,7 +24,7 @@ const products = [
     {
         title: "Áo thun Dinosaur 03",
         price: '190000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-thun",
         colors: ["white", "red", "orange", "yellow"],
         slug: "ao-thun-dinosaur-03",
@@ -33,7 +34,7 @@ const products = [
     {
         title: "Áo thun Polo 04",
         price: '194000',   
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-thun",
         colors: ["white", "orange", "blue"],
         slug: "ao-thun-polo-04",
@@ -43,7 +44,7 @@ const products = [
     {
         title: "Áo thun Polo 05",
         price: '194000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-thun",
         colors: ["white", "pink"],
         slug: "ao-thun-polo-05",
@@ -53,7 +54,7 @@ const products = [
     {
         title: "Áo thun Polo 06",
         price: '194000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-thun",
         colors: ["black"],
         slug: "ao-thun-polo-06",
@@ -63,7 +64,7 @@ const products = [
     {
         title: "Áo somi caro 07",
         price: '194000',  
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-somi",
         colors: ["white", "red", "orange", "blue"],
         slug: "ao-somi-caro-07",
@@ -73,7 +74,7 @@ const products = [
     {
         title: "Áo somi dài tay 08",
         price: '194000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-somi",
         colors: ["white", "red", "black"],
         slug: "ao-somi-dai-tay-08",
@@ -83,7 +84,7 @@ const products = [
     {
         title: "Áo somi tay dài 09",
         price: '194000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-somi",
         colors: ["white", "blue"],
         slug: "ao-somi-tay-dai-09",
@@ -93,7 +94,7 @@ const products = [
     {
         title: "Quần jean phong cách 10",
         price: '194000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "quan-jean",
         colors: ["blue", "black"],
         slug: "quan-jean-phong-cach-10",
@@ -103,7 +104,7 @@ const products = [
     {
         title: "Quần jean 11",
         price: '194000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "quan-jean",
         colors: ["blue", "black"],
         slug: "quan-jean-11",
@@ -113,7 +114,7 @@ const products = [
     {
         title: "Quần jean 12",
         price: '194000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "quan-jean",
         colors: ["blue"],
         slug: "quan-jean-12",
@@ -123,7 +124,7 @@ const products = [
     {
         title: "Áo thun Dinosaur 13",
         price: '189000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-thun",
         colors: ["white", "red"],
         slug: "ao-thun-dinosaur-13",
@@ -133,7 +134,7 @@ const products = [
     {
         title: "Áo thun Dinosaur 14",
         price: '159000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-thun",
         colors: ["white", "blue"],
         slug: "ao-thun-dinosaur-14",
@@ -143,7 +144,7 @@ const products = [
     {
         title: "Áo thun Dinosaur 15",
         price: '190000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-thun",
         colors: ["red", "blue"],
         slug: "ao-thun-dinosaur-15",
@@ -153,7 +154,7 @@ const products = [
     {
         title: "Áo somi dài tay 16",
         price: '194000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-somi",
         colors: ["blue", "black"],
         slug: "ao-somi-dai-tay-16",
@@ -163,7 +164,7 @@ const products = [
     {
         title: "Áo somi tay dài 17",
         price: '194000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "ao-somi",
         colors: ["white", "blue"],
         slug: "ao-somi-tay-dai-17",
@@ -173,7 +174,7 @@ const products = [
     {
         title: "Quần jean phong cách 18",
         price: '194000',
-        image01: "/static/media/01.164c60d891cdb6d2189b.jpg",
+        image01: img01,
         categorySlug: "quan-jean",
         colors: ["blue", "black"],
         slug: "quan-jean-phong-cach-18",

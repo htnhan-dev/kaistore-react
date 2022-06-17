@@ -1,19 +1,43 @@
 .section {
     margin-bottom: 80px;
+    font-family: 'Poppins', sans-serif;
 
     & > * ~ * {
         margin-top: 70px;
     }
 
     &__title {
-        font-size: 2rem;
+        font-size: 1.25rem;
         text-transform: capitalize;
         text-align: center;
-
-        &::before{
-            content: "";
-            border-bottom: 2px solid #e1e1e1;
-            width: 30%;
-        }
+        font-weight: 600;
     }
 }
+.react-tabs__tab{
+    border: 2px solid #e1e1e1;
+    border-radius: 1.25rem;
+    padding: 0.75rem;
+    color: #666;
+
+    &:hover{
+        background-color: $main-color;
+        color: #fff;
+    }
+    &-list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        border-bottom: none;
+    }
+
+    &--selected{
+        border: none;
+        background-color: $main-color;
+        color: #fff;
+        border-radius: 1.25rem;
+        padding: 0.75rem;
+    }
+}
+
+

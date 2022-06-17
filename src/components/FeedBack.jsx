@@ -3,6 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import quote from '../assets/images/quote-shape.png'
+import img from '../assets/images/1.png'
+
 const FeedBack = () => {
 
     const SampleNextArrow = (props) => {
@@ -10,7 +13,7 @@ const FeedBack = () => {
         return (
           <div className='control-btn' onClick={onClick}>
             <button className='next'>
-              <i className='fa fa-long-arrow-alt-right'></i>
+              <i class='bx bx-chevron-right' ></i>
             </button>
           </div>
         )
@@ -20,7 +23,7 @@ const FeedBack = () => {
         return (
           <div className='control-btn' onClick={onClick}>
             <button className='prev'>
-              <i className='fa fa-long-arrow-alt-left'></i>
+              <i class='bx bx-chevron-left' ></i>
             </button>
           </div>
         )
@@ -34,6 +37,24 @@ const FeedBack = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        }
+      }
+    ] 
   };
   return (
     <div className="feedback">
@@ -43,26 +64,84 @@ const FeedBack = () => {
                 <h3>There are many variations of passages of Lorem Ipsum available</h3>
             </div>
             <div className="feedback__content__coment">
-            <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
+              <Slider {...settings}>
+                <div className="feedback__content__coment__slider">
+                  <img src={quote} alt="" />
+                  <div className="feedback__content__coment__slider__content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil cum totam, laboriosam repellendus odit a modi eligendi quasi ex sed quaerat nemo, fugit aliquam nulla soluta fuga aperiam, eaque eos!
+                  </div>
+                  <div className="feedback__content__coment__slider__info">
+                    <div className="feedback__content__coment__slider__info__img">
+                      <img src={img} alt="" />
+                    </div>
+                    <div className="feedback__content__coment__slider__info__details">
+                      <div className="name">
+                          Huynh Thien Nhan
+                      </div>
+                      <div className="posible">
+                          Client
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="feedback__content__coment__slider">
+                  <img src={quote} alt="" />
+                  <div className="feedback__content__coment__slider__content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil cum totam, laboriosam repellendus odit a modi eligendi quasi ex sed quaerat nemo, fugit aliquam nulla soluta fuga aperiam, eaque eos!
+                  </div>
+                  <div className="feedback__content__coment__slider__info">
+                    <div className="feedback__content__coment__slider__info__img">
+                      <img src={img} alt="" />
+                    </div>
+                    <div className="feedback__content__coment__slider__info__details">
+                      <div className="name">
+                          Huynh Thien Nhan
+                      </div>
+                      <div className="posible">
+                          Client
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="feedback__content__coment__slider">
+                  <img src={quote} alt="" />
+                  <div className="feedback__content__coment__slider__content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil cum totam, laboriosam repellendus odit a modi eligendi quasi ex sed quaerat nemo, fugit aliquam nulla soluta fuga aperiam, eaque eos!
+                  </div>
+                  <div className="feedback__content__coment__slider__info">
+                    <div className="feedback__content__coment__slider__info__img">
+                      <img src={img} alt="" />
+                    </div>
+                    <div className="feedback__content__coment__slider__info__details">
+                      <div className="name">
+                          Huynh Thien Nhan
+                      </div>
+                      <div className="posible">
+                          Client
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="feedback__content__coment__slider">
+                  <img src={quote} alt="" />
+                  <div className="feedback__content__coment__slider__content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil cum totam, laboriosam repellendus odit a modi eligendi quasi ex sed quaerat nemo, fugit aliquam nulla soluta fuga aperiam, eaque eos!
+                  </div>
+                  <div className="feedback__content__coment__slider__info">
+                    <div className="feedback__content__coment__slider__info__img">
+                      <img src={img} alt="" />
+                    </div>
+                    <div className="feedback__content__coment__slider__info__details">
+                      <div className="name">
+                          Huynh Thien Nhan
+                      </div>
+                      <div className="posible">
+                          Client
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Slider>
             </div>
         </div>
     </div>

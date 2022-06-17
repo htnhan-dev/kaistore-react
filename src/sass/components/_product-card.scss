@@ -60,6 +60,10 @@
         border-radius: 0.5rem;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+
+        @include mobile{
+            font-size: 1.25rem;
+        }
     }
 
     &__image{
@@ -75,6 +79,9 @@
         border-radius: 1rem;
         margin-bottom: 1rem;
 
+        img{
+            max-width: 65%;
+        }
 
         &::before{
             content: "";

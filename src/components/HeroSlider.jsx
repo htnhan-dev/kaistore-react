@@ -3,10 +3,11 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import Button from './Button'
 
-import img from '../assets/images/slider/hero-1-1.png'
+// import img from '../assets/images/slider/hero-1-2.png'
 
 const HeroSlider = props => {
 
+    // console.log(img)
     const data = props.data
     const timeOut = props.timeOut ? props.timeOut : 3000
 

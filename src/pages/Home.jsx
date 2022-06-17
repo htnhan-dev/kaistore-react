@@ -12,6 +12,9 @@ import productData from "../assets/fake-data/products";
 import Banner from "../components/Banner";
 import FeedBack from "../components/FeedBack";
 
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+
 const Home = () => {
   return (
     <Helmet title="Home">
@@ -39,31 +42,76 @@ const Home = () => {
         </SectionBody>
       </Section>
 
-      {/* New Product */}
-      <Section>
-        <SectionTitle>New Arrivals</SectionTitle>
-        <SectionBody>
-          <Grid col={4} mdCol={2} smCol={1} gap={20}>
-            {
-              productData.getProducts(4).map((item, index) => (
-                <ProductCard
-                  key={index}
-                  banner="New"
-                  img01={item.image01}
-                  name={item.title}
-                  price={Number(item.price)}
-                  slug={item.slug}
-                />
-              ))
-            }
-          </Grid>
-        </SectionBody>
-      </Section>
+      <Tabs>
+        <Section>
+          <TabList>
+            <Tab><SectionTitle>New Arrivals</SectionTitle></Tab>
+            <Tab><SectionTitle>Top Rated</SectionTitle></Tab>
+            <Tab><SectionTitle>Featured</SectionTitle></Tab>
+          </TabList>
+
+          <TabPanel>
+            <SectionBody>
+              <Grid col={4} mdCol={2} smCol={1} gap={20}>
+                {
+                  productData.getProducts(8).map((item, index) => (
+                    <ProductCard
+                      key={index}
+                      banner="New"
+                      img01={item.image01}
+                      name={item.title}
+                      price={Number(item.price)}
+                      slug={item.slug}
+                    />
+                  ))
+                }
+                
+              </Grid>
+            </SectionBody>
+          </TabPanel>
+          <TabPanel>
+            <SectionBody>
+              <Grid col={4} mdCol={2} smCol={1} gap={20}>
+                {
+                  productData.getProducts(8).map((item, index) => (
+                    <ProductCard
+                      key={index}
+                      banner="Sale"
+                      img01={item.image01}
+                      name={item.title}
+                      price={Number(item.price)}
+                      slug={item.slug}
+                    />
+                  ))
+                }
+              </Grid>
+            </SectionBody>
+          </TabPanel>
+          <TabPanel>
+            <SectionBody>
+              <Grid col={4} mdCol={2} smCol={1} gap={20}>
+                {
+                  productData.getProducts(8).map((item, index) => (
+                    <ProductCard
+                      key={index}
+                      banner="Hot"
+                      img01={item.image01}
+                      name={item.title}
+                      price={Number(item.price)}
+                      slug={item.slug}
+                    />
+                  ))
+                }
+              </Grid>
+            </SectionBody>
+          </TabPanel>
+        </Section>
+      </Tabs>
       
       <Banner />
 
       {/* Top Rated */}
-      <Section>
+      {/* <Section>
         <SectionTitle>Sales</SectionTitle>
         <SectionBody>
           <Grid col={4} mdCol={2} smCol={1} gap={20}>
@@ -81,10 +129,10 @@ const Home = () => {
             }
           </Grid>
         </SectionBody>
-      </Section>
+      </Section> */}
 
       {/* Featured */}
-      <Section>
+      {/* <Section>
         <SectionTitle>Featured</SectionTitle>
         <SectionBody>
           <Grid col={4} mdCol={2} smCol={1} gap={20}>
@@ -102,7 +150,7 @@ const Home = () => {
             }
           </Grid>
         </SectionBody>
-      </Section>
+      </Section> */}
 
       {/* FeedBack Client */}
       <FeedBack />
