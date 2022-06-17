@@ -58,7 +58,7 @@ const Home = () => {
                     <ProductCard
                       key={index}
                       banner="New"
-                      img01={item.image01}
+                      img01={item.img}
                       name={item.title}
                       price={Number(item.price)}
                       slug={item.slug}
@@ -77,7 +77,7 @@ const Home = () => {
                     <ProductCard
                       key={index}
                       banner="Sale"
-                      img01={item.image01}
+                      img01={item.img}
                       name={item.title}
                       price={Number(item.price)}
                       slug={item.slug}
@@ -95,7 +95,7 @@ const Home = () => {
                     <ProductCard
                       key={index}
                       banner="Hot"
-                      img01={item.image01}
+                      img01={item.img}
                       name={item.title}
                       price={Number(item.price)}
                       slug={item.slug}
@@ -119,7 +119,7 @@ const Home = () => {
               productData.getProducts(4).map((item, index) => (
                 <ProductCard
                   key={index}
-                  img01={item.image01}
+                  img01={item.img}
                   banner="Sale"
                   name={item.title}
                   price={Number(item.price)}
@@ -140,7 +140,7 @@ const Home = () => {
               productData.getProducts(4).map((item, index) => (
                 <ProductCard
                   key={index}
-                  img01={item.image01}
+                  img01={item.img}
                   banner="Hot"
                   name={item.title}
                   price={Number(item.price)}

@@ -12,12 +12,12 @@ const colors = [
         color: "black"
     },
     {
-        display: "Vàng",
-        color: "yellow"
+        display: "Xanh lá",
+        color: "green"
     },
     {
-        display: "Cam",
-        color: "orange"
+        display: "Đỏ",
+        color: "red"
     },
     {
         display: "Xanh dương",

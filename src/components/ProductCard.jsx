@@ -7,12 +7,11 @@ import Button from './Button'
 
 import numberWithCommas from '../utils/numberWithCommas'
 
-import img from '../assets/images/products/01.jpg'
 
 const ProductCard = props => {
 
     // const dispatch = useDispatch()
-    console.log(img);
+    // console.log(img);
     const number = props.price * 1.5;
     const [isActive, setIsActive] = useState(false)
     const [count, setCount] = useState(0)

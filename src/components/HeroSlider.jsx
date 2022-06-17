@@ -7,7 +7,7 @@ import Button from './Button'
 
 const HeroSlider = props => {
 
-    // console.log(img)
+    
     const data = props.data
     const timeOut = props.timeOut ? props.timeOut : 3000
 
