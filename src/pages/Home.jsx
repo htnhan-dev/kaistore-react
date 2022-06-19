@@ -14,10 +14,12 @@ import FeedBack from "../components/FeedBack";
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import FeaturedOffers from "../components/FeaturedOffers";
 
 const Home = () => {
   return (
     <Helmet title="Home">
+
       {/* HeroSlider */}
       <HeroSlider
         data={heroSliderData}
@@ -25,6 +27,7 @@ const Home = () => {
         auto={false}
         timeOut={5000}
       />
+
       {/* Wrapper */}
       <Section>
         <SectionBody>
@@ -42,6 +45,7 @@ const Home = () => {
         </SectionBody>
       </Section>
 
+      {/* 3 tabs product */}
       <Tabs>
         <Section>
           <TabList>
@@ -107,50 +111,12 @@ const Home = () => {
           </TabPanel>
         </Section>
       </Tabs>
-      
+
+      {/* Banner */}
       <Banner />
 
-      {/* Top Rated */}
-      {/* <Section>
-        <SectionTitle>Sales</SectionTitle>
-        <SectionBody>
-          <Grid col={4} mdCol={2} smCol={1} gap={20}>
-            {
-              productData.getProducts(4).map((item, index) => (
-                <ProductCard
-                  key={index}
-                  img01={item.img}
-                  banner="Sale"
-                  name={item.title}
-                  price={Number(item.price)}
-                  slug={item.slug}
-                />
-              ))
-            }
-          </Grid>
-        </SectionBody>
-      </Section> */}
-
-      {/* Featured */}
-      {/* <Section>
-        <SectionTitle>Featured</SectionTitle>
-        <SectionBody>
-          <Grid col={4} mdCol={2} smCol={1} gap={20}>
-            {
-              productData.getProducts(4).map((item, index) => (
-                <ProductCard
-                  key={index}
-                  img01={item.img}
-                  banner="Hot"
-                  name={item.title}
-                  price={Number(item.price)}
-                  slug={item.slug}
-                />
-              ))
-            }
-          </Grid>
-        </SectionBody>
-      </Section> */}
+      {/* Featured offers */}
+      <FeaturedOffers />
 
       {/* FeedBack Client */}
       <FeedBack />

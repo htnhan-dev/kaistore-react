@@ -1,6 +1,7 @@
 .custom-checkbox {
     @include flex(center, flex-start);
-
+    padding: 0.5rem 0;
+    font-size: 1.15rem;
     cursor: pointer;
 
     &:hover {
@@ -17,9 +18,9 @@
 
     &__checkmark {
         margin-right: 10px;
-        height: 15px;
-        width: 15px;
-        border: 1px solid $txt-second-color;
+        height: 18px;
+        width: 18px;
+        border: 2px solid #e1e1e1;
 
         i {
             transform: scale(0);

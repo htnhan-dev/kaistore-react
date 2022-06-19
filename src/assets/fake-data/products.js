@@ -35,7 +35,7 @@ const products = [
         categorySlug: "smart-phone",
         colors: ["white", "black"],
         slug: "iphone-13-pro-max",
-        size: ["64", "128", "256", "512"],
+        size: ["64", "128", "256", "512", "1000"],
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur doloremque esse laboriosam, ipsa quis dolorem aut labore magni consequuntur cum temporibus soluta quisquam a nemo error natus beatae sequi.",
     },
     {
@@ -45,7 +45,7 @@ const products = [
         categorySlug: "smart-phone",
         colors: ["white", "blue"],
         slug: "iphone-12-pro-max",
-        size: ["64", "128", "256", "512"],
+        size: ["64", "128", "256", "512", "1000"],
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur doloremque esse laboriosam, ipsa quis dolorem aut labore magni consequuntur cum temporibus soluta quisquam a nemo error natus beatae sequi.",
     },
     {
@@ -65,7 +65,7 @@ const products = [
         categorySlug: "smart-phone",
         colors: ["white", "green"],
         slug: "samsung-note-21-ultra",
-        size: ["64", "128"],
+        size: ["64", "128", "256"],
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur doloremque esse laboriosam, ipsa quis dolorem aut labore magni consequuntur cum temporibus soluta quisquam a nemo error natus beatae sequi.",
     },
     {
@@ -75,7 +75,7 @@ const products = [
         categorySlug: "smart-phone",
         colors: ["white", "black"],
         slug: "samsung-galaxy-22",
-        size: ["64", "128"],
+        size: ["64", "128", "256"],
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur doloremque esse laboriosam, ipsa quis dolorem aut labore magni consequuntur cum temporibus soluta quisquam a nemo error natus beatae sequi.",
     },
     {
@@ -301,7 +301,7 @@ const products = [
     {
         title: "Apple Watch Series 7",
         price: '8690000',
-        img: img27,
+        img: img28,
         categorySlug: "accessory",
         colors: ["white", "green", "pink"],
         slug: "apple-watch-series-7",

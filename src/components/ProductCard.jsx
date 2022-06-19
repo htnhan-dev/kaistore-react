@@ -3,6 +3,10 @@ import PropTypes from 'prop-types'
 
 import { Link } from 'react-router-dom'
 
+import { useDispatch } from 'react-redux'
+
+import { set } from '../redux/product-modal/productModalSlice'
+
 import Button from './Button'
 
 import numberWithCommas from '../utils/numberWithCommas'
@@ -10,7 +14,7 @@ import numberWithCommas from '../utils/numberWithCommas'
 
 const ProductCard = props => {
 
-    // const dispatch = useDispatch()
+    const dispatch = useDispatch()
     // console.log(img);
     const number = props.price * 1.5;
     const [isActive, setIsActive] = useState(false)
@@ -36,8 +40,9 @@ const ProductCard = props => {
                         size="sm"    
                         icon="bx bx-search-alt"
                         animate={true}
+                        onClick={() => dispatch(set(props.slug))}
                     >
-                        Xem ngay
+                        Quick View
                     </Button>
                 </button>
                 <div className="product-card__image__heart">
@@ -46,7 +51,7 @@ const ProductCard = props => {
                 </div>
             </div>
             <Link to={`/catalog/${props.slug}`}>
-            <h3 className="product-card__name">{props.name}</h3>
+                <h3 className="product-card__name">{props.name}</h3>
             </Link>
             <div className="product-card__price">
                 {numberWithCommas(props.price)}
@@ -61,7 +66,7 @@ const ProductCard = props => {
                         icon="bx bx-cart"
                         animate={true}
                     >
-                        chọn mua
+                        Buy Now
                     </Button>
                 </div>
             </Link>

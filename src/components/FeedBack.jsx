@@ -76,7 +76,7 @@ const FeedBack = () => {
                     </div>
                     <div className="feedback__content__coment__slider__info__details">
                       <div className="name">
-                          Huynh Thien Nhan
+                          Kai
                       </div>
                       <div className="posible">
                           Client
@@ -95,7 +95,7 @@ const FeedBack = () => {
                     </div>
                     <div className="feedback__content__coment__slider__info__details">
                       <div className="name">
-                          Huynh Thien Nhan
+                          Kai
                       </div>
                       <div className="posible">
                           Client
@@ -114,7 +114,7 @@ const FeedBack = () => {
                     </div>
                     <div className="feedback__content__coment__slider__info__details">
                       <div className="name">
-                          Huynh Thien Nhan
+                          Kai
                       </div>
                       <div className="posible">
                           Client
@@ -133,7 +133,7 @@ const FeedBack = () => {
                     </div>
                     <div className="feedback__content__coment__slider__info__details">
                       <div className="name">
-                          Huynh Thien Nhan
+                          Kai
                       </div>
                       <div className="posible">
                           Client

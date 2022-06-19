@@ -5,19 +5,23 @@ import logo from '../assets/images/logo-kai.png'
 
 const mainNav = [
     {
-        display: "Trang chủ",
+        display: "Home",
         path: "/"
     },
     {
-        display: "Sản phẩm",
+        display: "Product",
         path: "/catalog"
     },
     {
-        display: "Phụ kiện",
-        path: "/accessories"
+        display: "Blog",
+        path: "/blog"
     },
     {
-        display: "Liên hệ",
+        display: "About Us",
+        path: "/about"
+    },
+    {
+        display: "Contact",
         path: "/contact"
     }
 ]
