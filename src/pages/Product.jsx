@@ -7,6 +7,7 @@ import ProductDetail from "../components/ProductDetail";
 import Section, { SectionBody, SectionTitle } from "../components/Section";
 import ProductCard from "../components/ProductCard";
 import Grid from "../components/Grid";
+import Breadcrumb from "../components/Breadcrumb";
 
 
 
@@ -21,6 +22,7 @@ const Product = (props) => {
 
   return (
     <Helmet title={product.title}>
+      <Breadcrumb title=" Detail Product" link={product.title} slug={`/${product.slug}`}/>
       <Section>
         <SectionBody>
           <ProductDetail product={product} />

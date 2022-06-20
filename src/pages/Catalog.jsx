@@ -11,6 +11,7 @@ import size from "../assets/fake-data/product-size";
 import CheckBox from "../components/CheckBox";
 import Button from "../components/Button";
 import InfinityList from "../components/InfinityList";
+import Breadcrumb from "../components/Breadcrumb";
 
 const Catalog = () => {
   const initFilter = {
@@ -107,6 +108,7 @@ const Catalog = () => {
 
   return (
     <Helmet title="Product">
+      <Breadcrumb title="Product" link="Catalog" slug="/catalog"/>
       <div className="catalog">
         <div className={`catalog__filter ${isActive ? 'active' : ''}`}>
           <div className="catalog__filter__close" onClick={() => handleToggle()}>
