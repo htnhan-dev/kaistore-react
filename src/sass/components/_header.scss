@@ -38,7 +38,15 @@
         pointer-events: none;
 
         img {
-            height: 28px;
+            height: 250px;
+
+            @include tablet{
+                height: 210px;
+            }
+
+            @include mobile{
+                height: 180px;
+            }
         }
     }
 

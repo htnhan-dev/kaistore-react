@@ -13,7 +13,7 @@ import numberWithCommas from "../utils/numberWithCommas";
 import Breadcrumb from "../components/Breadcrumb";
 
 const Cart = () => {
-  
+
   const dispatch = useDispatch();
 
   const cartItems = useSelector((state) => state.cartItems.value);
@@ -41,7 +41,7 @@ const Cart = () => {
 
   const deleteCart = () => {
     dispatch(deleteAll());
-    window.location.reload();
+    // window.location.reload();
   };
   return (
     <Helmet title="Cart">

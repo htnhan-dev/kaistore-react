@@ -25,8 +25,9 @@ const Checkout = () => {
 
   const deleteCart = () => {
     dispatch(deleteAll());
-    window.location.reload();
-    path("/catalog")
+    
+    path("/thankyou")
+    // window.location.reload();
   };
 
   const [totalPrice, setTotalPrice] = useState(0);

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-import logo from '../assets/images/logo-kai.png'
+import logo from '../assets/images/logo.png'
 
 const mainNav = [
     {

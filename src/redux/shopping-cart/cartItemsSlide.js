@@ -53,7 +53,7 @@ export const cartItemsSlice = createSlice({
             localStorage.setItem('cartItems', JSON.stringify(state.value.sort((a, b) => a.id > b.id ? 1 : (a.id < b.id ? -1 : 0))))
         },
         deleteAll: () => {
-            localStorage.clear();
+            localStorage.removeItem('cartItems');
         }
     },
 })
